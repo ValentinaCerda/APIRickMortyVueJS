@@ -11,9 +11,13 @@
           <router-link class="nav-link" to="/">Home</router-link>
         </li>
         <li class="nav-item">
-          <router-link class="nav-link" to="/personaje">Personajes</router-link>
+          <router-link class="nav-link" to="/personaje">Personajes por ID</router-link>
         </li>
       </ul>
+      <!-- <form class="d-flex mx-3">
+        <input class="form-control me-2" type="search" placeholder="escribir número" aria-label="search">
+        <button class="btn btn-outline-success" type="submit">Buscar</button>
+      </form> -->
     </div>
   </div>
 </nav>

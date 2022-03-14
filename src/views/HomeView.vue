@@ -1,11 +1,10 @@
 <template>
-<div class="pantalla">
-  <div class="container center">
-    <h1 class="text-center lista">Personajes Rick&Morty</h1>
-    <div class="row">
-      <div class="tarjeta col">
+  <div class="pantalla">
+    <div class="container center">
+      <h1 class="text-center lista">Personajes Rick&Morty</h1>
+      <div class="row">
         <div
-          class="card text-center mt-5 mb-5 offset-2"
+          class="card col-3 text-center mt-5 mb-5 offset-2"
           style="width: 18rem"
           v-for="character of characters"
           :key="character.id"
@@ -19,16 +18,12 @@
             <span v-else class="red"></span>
 
             <h6>{{ character.status }}</h6>
-            <h6>{{ character.location?.name }}</h6>
-            <router-link :to="`/personaje`" class="btn btn-danger">Ir al personaje</router-link>
+            <router-link :to="`/personaje/${character.id}`" class="btn btn-danger">Ir al personaje</router-link>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-  <!-- usar cards para mostrar los personajes en el home -->
-  <!-- <router-link :to="`/personaje/${character.characterId}`">Name</router-link> -->
 </template>
 
 <script>
@@ -58,23 +53,27 @@ export default {
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 
-.green {
+/* .green {
   color: green;
 }
 .red {
   color: red;
-}
+} */
 .card {
   display: inline-block;
+  border-radius: 10px;
 }
 .pantalla {
-  background-image: url('https://us.123rf.com/450wm/pitris/pitris1510/pitris151000024/46619020-fondo-de-espacio-con-estrellas-.jpg?ver=6');
+  background-image: url("https://us.123rf.com/450wm/pitris/pitris1510/pitris151000024/46619020-fondo-de-espacio-con-estrellas-.jpg?ver=6");
 }
 .lista {
   color: #fff;
   padding: 20px;
-  font-family: 'Press Start 2P', cursive;
+  font-family: "Press Start 2P", cursive;
+}
+.card-img-top {
+  border-radius: 10px;
 }
 </style>
