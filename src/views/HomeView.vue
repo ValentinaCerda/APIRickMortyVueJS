@@ -4,8 +4,7 @@
       <h1 class="text-center lista">Personajes Rick&Morty</h1>
       <div class="row">
         <div
-          class="card col-3 text-center mt-5 mb-5 offset-2"
-          style="width: 18rem"
+          class="card col-3 text-center mt-5 mb-5"
           v-for="character of characters"
           :key="character.id"
         >
@@ -63,7 +62,10 @@ export default {
 } */
 .card {
   display: inline-block;
-  border-radius: 10px;
+  border-radius: 5px;
+  background: none;
+  color: white;
+  /* background: rgba(253, 244, 244, 0.726); */
 }
 .pantalla {
   background-image: url("https://us.123rf.com/450wm/pitris/pitris1510/pitris151000024/46619020-fondo-de-espacio-con-estrellas-.jpg?ver=6");
