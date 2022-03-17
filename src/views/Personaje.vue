@@ -2,11 +2,11 @@
   <div class="fondo">
     <div class="padre container center p-5">
       <div class="card p-3" style="max-width: 940px">
-        <div class="row g-0">
+        <div class="row align-items-center justify-content-around">
           <div class="col-md-4">
             <img :src="character.image" class="img-top rounded-start" alt="" />
           </div>
-          <div class="col-md-8">
+          <div class="col-md-7 ">
             <div class="card-body text-center">
               <h5 class="card-title">{{ character.name }}</h5>
               <p class="card-text">
@@ -76,6 +76,7 @@ export default {
 .padre {
   display: flex;
   align-items: center;
-  justify-content: center
+  justify-content: center;
+  height: 100vh;
 }
 </style>
