@@ -11,7 +11,7 @@
           <router-link class="nav-link" to="/">Home</router-link>
         </li>
         <li class="nav-item">
-          <router-link class="nav-link" to="/personaje">Personajes por ID</router-link>
+          <router-link class="nav-link" to="/personaje">Contact</router-link>
         </li>
       </ul>
       <!-- <form class="d-flex mx-3">

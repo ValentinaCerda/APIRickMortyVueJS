@@ -18,15 +18,15 @@ export default {
 .fondo {
   background-image: url('https://indiehoy.com/wp-content/uploads/2019/12/rick-morty.jpg');
   /* Arreglar dimensiones de imagen*/
-  
   height: 100vh;
   background-repeat: no-repeat;
+  background-position: center;
 }
 .error {
   color: white;
   font-family: 'Press Start 2P', cursive;
   font-size: 30px;
-  padding: 30px;
+  padding: 25px;
   background-color: black;
 }
 .final {

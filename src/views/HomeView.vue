@@ -13,10 +13,6 @@
             <h5 class="card-title">{{ character.name }}</h5>
             <h6>{{ character.species }}</h6>
 
-            <span v-if="character.status === 'Alive'" class="green"></span>
-            <span v-else class="red"></span>
-
-            <h6>{{ character.status }}</h6>
             <router-link :to="`/personaje/${character.id}`" class="btn btn-danger">Ir al personaje</router-link>
           </div>
         </div>
@@ -54,12 +50,6 @@ export default {
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 
-/* .green {
-  color: green;
-}
-.red {
-  color: red;
-} */
 .card {
   display: inline-block;
   border-radius: 5px;

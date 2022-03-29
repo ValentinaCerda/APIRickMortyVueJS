@@ -1,27 +1,24 @@
 <template>
   <div class="fondo">
-    <div class="padre container center mt-5">
-      <div class="row g-0" style="max-width: 940px">
-
-        <div class="card col mb-3">
-
-          <div class="img mw-100">
-            <img :src="character.image" class="img-fluid rounded-start" alt="" />
+    <div class="padre container center">
+      <div class="card p-3" style="max-width: 940px">
+        <div class="row align-items-center justify-content-around">
+          <div class="col-md-4">
+            <img :src="character.image" class="img-top rounded-start" alt="" />
           </div>
-
-          <div class="">
+          <div class="col-md-8">
             <div class="card-body text-center">
-              <h5 class="card-title">{{ character.name }}</h5>
+              <h5 class="card-title p-3">{{ character.name }}</h5>
               <p class="card-text">
-                {{ character.status }}
+                <span>Status:</span> {{ character.status }}
                 <br>
-                {{ character.species }}
+                <span>Specie:</span> {{ character.species }}
                 <br>
-                {{ character.gender }}
+                <span>Gender:</span> {{ character.gender }}
                 <br>
-                {{ character.location?.name }}
+                <span>Location:</span> {{ character.location?.name }}
                 <br>
-                {{ character.origin?.name }}
+                <span>Origin:</span> {{ character.origin?.name }}
               </p>
             </div>
           </div>
@@ -63,7 +60,7 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@600&display=swap');
 
 .card {
-  border: 10px;
+  border: 5px;
   border-color: white;
   border-radius: 10px;
   border-style: dashed;
@@ -78,16 +75,16 @@ export default {
   font-size: 28px;
   font-family: 'Smooch Sans', sans-serif;
 }
-.img {
-  padding: 50px;
-}
 .fondo {
   background-image: url('https://us.123rf.com/450wm/pitris/pitris1510/pitris151000024/46619020-fondo-de-espacio-con-estrellas-.jpg?ver=6');
-  padding: 0;
 }
 .padre {
   display: flex;
   align-items: center;
-  justify-content: center
+  justify-content: center;
+  height: 100vh;
+}
+span {
+  color: #000;
 }
 </style>
